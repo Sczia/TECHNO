@@ -8,7 +8,6 @@
     <div class="row custom-section d-flex align-items-center ">
         <div class="col-12 col-lg-4 ">
             <h2>Appointment</h2>
-            <!--     <h3>Process</h3> -->
             <p>Make your own appointment link for everyone to use. It is simple to schedule appointments for your own agendas. </p>
             <a href= "{{ route('login') }}" >Start</a>
 

@@ -8,35 +8,36 @@
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <div class="signup-form">
-                <form action="" class="mt-5 border p-4 bg-light shadow">
+                <form action="{{ route('pending.store') }}" class="mt-5 border p-4 bg-light shadow" method="POST">
+                    @csrf
                     <h4 class="mb-5 text-secondary">Appointment</h4>
                     <div class="row">
                         <div class="mb-3 col-md-12">
                             <label>Name<span class="text-danger">*</span></label>
-                            <input type="text" name="fname" class="form-control" placeholder="Enter Name">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
                         </div>
 
                         <div class="col-md-6">
                             <label>Email<span class="text-danger">*</span></label>
-                            <input type="text" name="Lname" class="form-control" placeholder="Enter Email">
+                            <input type="text" name="email"  id="email" class="form-control" placeholder="Enter Email">
                         </div>
 
                         <div class="col-md-6">
                             <label>Contact number<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" placeholder="Enter Cntact number">
+                            <input type="text" name="phone_number"  id="phone_number" class="form-control" placeholder="Enter Cntact number">
                         </div>
 
                         <div class="mb-3 col-md-12">
                             <label>Address<span class="text-danger">*</span></label>
-                            <input type="password" name="confirmpassword" class="form-control" placeholder="Enter Address">
+                            <input type="text" name="address" id="address"  class="form-control" placeholder="Enter Address">
                         </div>
 
                         <div class="mb-3 col-md-12">
                             <label>Message<span class="text-danger">*</span></label>
-                            <input type="password" name="confirmpassword" class="form-control" placeholder="Enter Message">
+                            <input type="text" name="message" id="message" class="form-control" placeholder="Enter Message">
                         </div>
                         <div class="col-md-12">
-                            <button class="btn btn-primary float-end">Send</button>
+                            <button class="btn btn-primary float-end" type="submit">Send</button>
                         </div>
                     </div>
                 </form>

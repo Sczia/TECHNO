@@ -2,8 +2,9 @@
     <header class="head my-3 ">
         <nav class="navbar navbar-expand-lg navbar-light head__custom-nav ">
             <a class="navbar-brand d-flex align-items-center " href="# ">
-                <img src="/img/logo-logo-removebg-preview.png " alt="website logo ">
-                <span>Appointment Keeper</span>
+                <img src="{{ $logo->path }} " alt="website logo ">
+              <span>{{ $title->title }}</span>
+
             </a>
             <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarNav ">
                 <span><img src="/IMAGE/menu.png " alt=" "></span>

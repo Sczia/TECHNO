@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
+use App\Models\Contact;
 use Illuminate\Http\Request;
+use PHPUnit\Framework\Constraint\Count;
 
 class AdminController extends Controller
 {
@@ -13,7 +16,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('APPOINTMENT.admin.index');
+        $pendingCount=Appointment::where('status','=',0)->count();
+        $confirmCount=Appointment::where('status','=',1)->count();
+
+        return view('APPOINTMENT.admin.dashboard.index', compact('pendingCount', 'confirmCount'));
     }
 
     /**

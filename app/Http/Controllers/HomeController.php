@@ -2,28 +2,40 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Manage;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
     public function landing (){
-        return view ('APPOINTMENT.homecontents.landing');
+        $title=Manage::where('type','=',0)->first();
+        $logo=Manage::where('type','=',1)->first();
+        return view ('APPOINTMENT.homecontents.landing', compact('title','logo'));
       }
 
       public function appointment (){
-        return view ('APPOINTMENT.homecontents.appointment');
+        $title=Manage::where('type','=',0)->first();
+        $logo=Manage::where('type','=',1)->first();
+        return view ('APPOINTMENT.homecontents.appointment', compact('title','logo'));
       }
 
 
       public function contactus (){
-        return view ('APPOINTMENT.homecontents.contactus');
+        $title=Manage::where('type','=',0)->first();
+        $logo=Manage::where('type','=',1)->first();
+        return view ('APPOINTMENT.homecontents.contactus', compact('title','logo'));
       }
 
       public function login(){
-        return view ('APPOINTMENT.homecontents.login');
+        $title=Manage::where('type','=',0)->first();
+        $logo=Manage::where('type','=',1)->first();
+        return view ('APPOINTMENT.homecontents.login', compact('title','logo'));
       }
 
       public function register(){
-        return view ('APPOINTMENT.homecontents.register');
+        $title=Manage::where('type','=',0)->first();
+        $logo=Manage::where('type','=',1)->first();
+        return view ('APPOINTMENT.homecontents.register', compact('title','logo'));
       }
 }

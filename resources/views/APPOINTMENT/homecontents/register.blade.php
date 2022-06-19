@@ -13,37 +13,37 @@
                     <div class="row">
                         <div class="mb-3 col-md-12">
                             <label>Name<span class="text-danger">*</span></label>
-                            <input type="text" name="fname" class="form-control" placeholder="Enter Name">
+                            <input type="text" name="name" id="name"  class="form-control" placeholder="Enter Name">
                         </div>
 
                         <div class="col-md-6">
                             <label>Email<span class="text-danger">*</span></label>
-                            <input type="text" name="Lname" class="form-control" placeholder=" Enter Email">
+                            <input type="text" name="email" id="email" class="form-control" placeholder=" Enter Email">
                         </div>
 
                         <div class="col-md-6">
                             <label>Contact number<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" placeholder="Enter Contact number">
+                            <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Enter Contact number">
                         </div>
 
 
                         <div class="col-md-6">
                             <label>Occupation<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" placeholder="Enter Occupation">
+                            <input type="text" name="occupation" id="occupation" class="form-control" placeholder="Enter Occupation">
                         </div>
 
                         <div class="col-md-6">
                             <label>Company<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" placeholder="Enter Company">
+                            <input type="text" name="company" id="company" class="form-control" placeholder="Enter Company">
                         </div>
 
                         <div class="mb-3 col-md-12">
                             <label>Address<span class="text-danger">*</span></label>
-                            <input type="password" name="confirmpassword" class="form-control" placeholder="Enter Address">
+                            <input type="text" name="address" id="address" class="form-control" placeholder="Enter Address">
                         </div>
 
                         <div class="col-md-12">
-                            <button class="btn btn-primary float-end">Signup Now</button>
+                            <button class="btn btn-primary float-end" type="submit">Signup Now</button>
                         </div>
                     </div>
                 </form>

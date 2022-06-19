@@ -12,10 +12,13 @@
         <h2 class="h1-responsive font-weight-bold text-center my-5 text-brown">Contact Us</h2>
         <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
 
+
+
         <div class="row">
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contactform">
 
+                <form action="{{ route('contact.store') }}" id="contactform" method="post">
+@csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="md-form mb-0">

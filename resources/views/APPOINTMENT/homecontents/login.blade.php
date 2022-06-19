@@ -23,8 +23,8 @@
             </div>
             <a href="# ">Forgot Password?</a>
         </div> --}}
-        <button type="submit " class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase ">Log in</button>
-        <p class="mt-3 font-weight-normal ">Don't have an account? <a href="{{ route('register') }}"><strong>Register Now</strong></a></p>
+        <button type="submit " class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Log in</button>
+      {{--   <p class="mt-3 font-weight-normal ">Don't have an account? <a href="{{ route('register') }}"><strong>Register Now</strong></a></p> --}}
     </form>
 </div>
 
